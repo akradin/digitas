@@ -4,7 +4,27 @@
     <meta charset="utf-8">
     <title>Code Challenge</title>
     <link rel="stylesheet" href="styles/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=window, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+      // scroll to about section
+      $('a[href="#contact-container"]').on('click',function (e) {
+         e.preventDefault();
+
+         var target = this.hash;
+         console.log('this.hash is', this.hash);
+         var $target = $('#contact-container');
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top
+          }, 1100, 'swing', function () {
+             window.location.hash = target;
+         });
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="content-wrapper">
