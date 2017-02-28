@@ -47,7 +47,7 @@ nav {
 .hover-content a {
   font-size: 38px;
   text-decoration: none;
-  color: gray; }
+  color: #000; }
 .hover-content p {
   font-size: 20px;
   margin: 20px auto;
@@ -57,17 +57,27 @@ nav {
   border: none;
   border-radius: 15px;
   height: 30px;
-  width: 75px; }
+  width: 75px;
+  transition: .5s; }
 
 .box-1 {
   position: relative; }
 
-.box-1-img {
+.box-img {
   width: 100%; }
+
+.up-arrow {
+  float: right;
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  margin-left: 20px; }
 
 .grid div:hover .hover-content {
   opacity: .8; }
 .grid div:hover .hover-content p {
   margin-top: 5px; }
+.grid div:hover .hover-content button:hover {
+  opacity: .75; }
 
 /*# sourceMappingURL=theme.css.map */

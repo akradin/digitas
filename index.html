@@ -4,113 +4,99 @@
     <meta charset="utf-8">
     <title>Code Challenge</title>
     <link rel="stylesheet" href="styles/main.css">
+     <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
     <meta name="viewport" content="width=window, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-
-      // scroll to about section
-      $('a[href="#contact-container"]').on('click',function (e) {
-         e.preventDefault();
-
-         var target = this.hash;
-         console.log('this.hash is', this.hash);
-         var $target = $('#contact-container');
-
-         $('html, body').stop().animate({
-             'scrollTop': $target.offset().top
-          }, 1100, 'swing', function () {
-             window.location.hash = target;
-         });
-      });
-    });
-    </script>
   </head>
   <body>
     <div class="content-wrapper">
-      <h1>Alex Kradin Digitas Code Challenge</h1>
+      <h1 id="top">Alex Kradin Digitas Code Challenge</h1>
+      <h1>A Collection of Photos from a Cross Country Motorcycle Trip</h1>
       <nav>
         <a href="#contact-container" class="contact">Contact</a>
         <a href="https://www.alexkradin.com" target="blank" class="about">About</a>
         <a href="#" class="pizza">Pizza</a>
       </nav>
+      <a href=#top>
+        <img src="./images/up-arrow.png" class="up-arrow" data-aos="fade-right">
+      </a>
       <div class="grid">
         <div class="box-1">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/the-steeds-two.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Bikes</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-2">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/the-steeds.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Bikes</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-3">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/badlands.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Badlands</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-4">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/wyoming.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Tetons</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-5">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/olympic.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>Olympic National Park</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-6">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/olympic-two.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>Olympic National Park</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-7">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/washington-beach.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>Ruby Beach</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-8">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/oregon-coast.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Oregon Coast</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-9">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/oregon-coast-two.jpg" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>The Oregon Coast</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
         </div>
         <div class="box-10">
-          <img src="./images/stock-photo-1.jpg" class="box-1-img">
+          <img src="./images/redwood.JPG" class="box-img">
           <div class="hover-content">
-            <a href="#"><h3>Test</h3></a>
+            <a href="#"><h3>Redwoods</h3></a>
             <p>Bacon ipsum dolor amet jowl ball tip tail, venison shankle leberkas turducken meatloaf corned beef pork chop pancetta spare ribs.</p>
             <button>button</button>
           </div>
@@ -120,5 +106,41 @@
     <div id="contact-container">
       Say What's Up.
     </div>
+
+    <script>
+        $(document).ready(function() {
+
+      // scroll to contact section
+      $('a[href="#contact-container"]').on('click',function (e) {
+         e.preventDefault();
+
+         var target = this.hash;
+         var $target = $('#contact-container');
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top
+          }, 1100, 'swing', function () {
+             window.location.hash = target;
+         });
+       });
+     });
+        
+        $(document).ready(function() {
+
+        // scroll to top
+        $('a[href="#top"]').on('click',function (e) {
+           e.preventDefault();
+
+           var target = this.hash;
+           var $target = $('#top');
+
+           $('html, body').stop().animate({
+               'scrollTop': $target.offset().top
+            }, 1100, 'swing', function () {
+               window.location.hash = target;
+           });
+         });
+        });
+    </script>
   </body>
 </html>
