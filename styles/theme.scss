@@ -66,7 +66,7 @@ nav {
   }
 
   p {
-    font-size: 16px;
+    font-size: 20px;
     margin: 20px auto;
     transition: .75s;
     width: 80%;
@@ -81,6 +81,9 @@ nav {
 }
 
 .white-text {
+  h3 {
+    color: $white;
+  }
   a {
     color: $white;
     font-size: 38px;
@@ -121,16 +124,17 @@ nav {
 }
 
 #contact-container {
-  ul li {
-
-    a {
-      color: $black;
-    }
-
-    display: inline;
-    margin: 0 5%;
-  }
   text-align: center;
+}
+
+.contact {
+  li {
+    a {
+      i{
+      font-size: 70px;
+    }
+    }
+  }
 }
 
 .grid div:hover {
