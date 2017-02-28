@@ -29,9 +29,13 @@
 .contact {
   li {
     a {
-      i{
-      font-size: 40px;
-      } 
+      i {
+      font-size: 30px;
+      color: $black;
+      text-decoration: none;
     }
+    }
+    display: inline;
+    margin: 0 5%
   }
 }

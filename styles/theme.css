@@ -89,8 +89,13 @@ nav {
 #contact-container {
   text-align: center; }
 
-.contact li a i {
-  font-size: 70px; }
+.contact li {
+  display: inline;
+  margin: 0 5%; }
+  .contact li a i {
+    font-size: 70px;
+    color: #000;
+    text-decoration: none; }
 
 .grid div:hover .hover-content {
   opacity: .8; }
